@@ -1,0 +1,50 @@
+@import "./variables";
+@font-face {
+  font-family: "Poppins";
+  src: url("@/Assets/Fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("@/Assets/Fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Baloo Bhai";
+  src: url("@/Assets/Fonts/BalooBhai-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Poppins";
+  background-image: url(@/Assets/Images/bg-barilla.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.first_screen {
+  grid-area: first_screen;
+}
+.footer {
+  grid-area: footer;
+}
+.grid_container {
+  display: grid;
+  grid-template-areas:
+    "first_screen first_screen first_screen first_screen first_screen first_screen"
+    "footer footer footer footer footer footer";
+  grid-template-columns: auto;
+  padding: 0;
+}
+.grid_container > div {
+  text-align: center;
+}

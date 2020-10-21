@@ -1,0 +1,29 @@
+label.error-block {
+  color: red;
+  font-size: 11px;
+  text-align: left;
+}
+input.error,
+textarea.error,
+select.error {
+  border-color: red;
+}
+input.mismatch,
+textarea.mismatch,
+select.mismatch {
+  border-color: orange;
+}
+input.valid,
+textarea.valid,
+select.valid {
+  border-color: green;
+}
+label.error {
+  color: red;
+}
+label.mismatch {
+  border-color: orange;
+}
+label.valid {
+  color: green;
+}
